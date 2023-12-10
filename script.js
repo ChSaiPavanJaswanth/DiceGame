@@ -22,10 +22,10 @@ refresh.addEventListener('click',()=>{
 window.addEventListener('load',function(){
     if(!localStorage.getItem('check')){
         // console.log(check);
-        console.log("hey");
+        // console.log("hey");
         return;
     }
-    console.log("hi");
+    // console.log("hi");
     let player1 = Math.ceil(Math.random()*imgArr.length);
     let player2 = Math.ceil(Math.random()*imgArr.length);
     if(player1>player2){
@@ -43,7 +43,7 @@ window.addEventListener('load',function(){
 
     img1.setAttribute('src',imgArr[player1-1]);
     img2.setAttribute('src',imgArr[player2-1]);
-    refresh.style.width = "40%"
+    // refresh.style.width = "40%"
 });
 
 stop.addEventListener('click',function(){
